@@ -49,6 +49,7 @@ h1 {
   padding: 5px;
   margin-right: 15%;
   margin-left: 15%;
+  margin-bottom: 30px;
   border-radius: 10px;
 }
 h2 {
@@ -58,11 +59,27 @@ h2 {
   padding: 5px;
   margin-right: 15%;
   margin-left: 15%;
+  margin-bottom: 30px;
   border-radius: 10px;
 }
 #number {
   color: #33CCFF;
   font-family: Heavy;
+}
+
+#location {
+  font-size: 14px;
+  background-color: hsla(0, 0%, 0%, 0.3);
+  padding: 5px;
+  margin-right: 15%;
+  margin-left: 15%;
+  border-radius: 10px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.loca {
+  color: #33CCFF;
+  font-family: Bold;
 }
 
 .socials {
@@ -94,14 +111,36 @@ h2 {
 #copy {
   color: #fff;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width: 376px) {
 	.header, .footer {
     	padding: 5px;
 	}
 	h1 {
-		font-size: 25px;
+		font-size: 20px;
+    	padding: 10px 10px 10px 10px;
+		margin-bottom: 30px;
+		line-height: 1.75;
 	}
 	h2 {
-		font-size: 18px;
+		font-size: 16px;
+    	padding: 10px 10px 10px 10px;
+		margin-bottom: 30px;
+		line-height: 1.5;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.header, .footer {
+    	padding: 5px;
+	}
+	h1 {
+		font-size: 15px;
+    	padding: 10px 10px 10px 10px;
+		line-height: 1.75;
+	}
+	h2 {
+		font-size: 13px;
+    	padding: 10px 10px 10px 10px;
+		line-height: 1.5;
 	}
 }
