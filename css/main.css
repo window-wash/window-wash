@@ -36,7 +36,7 @@ body {
 }
 .header img {
   padding: 1em 0 1em 0;
-  width: 35%;
+  width: 20%;
 }
 .content {
   padding: 1.5em;
@@ -62,11 +62,14 @@ h2 {
   margin-bottom: 30px;
   border-radius: 10px;
 }
-#number {
+#email a {
   color: #33CCFF;
   font-family: Heavy;
 }
-
+#number a {
+  color: #FFF;
+  font-family: Heavy;
+}
 #location {
   font-size: 14px;
   background-color: hsla(0, 0%, 0%, 0.3);
@@ -83,16 +86,18 @@ h2 {
 }
 
 .socials {
+  font-size: 12px;
   text-align: center;
-  position: fixed;
-  bottom: 10%;
+  position: absolute;
+  bottom: 8%;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 
 .socials img {
-	width: 3.5em;
+	width: 3em;
+	margin-top: -5px;
 	padding: 0 5px;
 }
 
@@ -111,7 +116,26 @@ h2 {
 #copy {
   color: #fff;
 }
-@media only screen and (max-width: 600px) and (min-width: 376px) {
+
+@media only screen and (max-width: 1460) and (min-width: 601px) {
+	.header, .footer {
+    	padding: 5px;
+	}
+	h1 {
+		font-size: 22px;
+    	padding: 10px 10px 10px 10px;
+		margin-bottom: 30px;
+		line-height: 1.75;
+	}
+	h2 {
+		font-size: 19px;
+    	padding: 10px 10px 10px 10px;
+		margin-bottom: 30px;
+		line-height: 1.5;
+	}
+}
+
+@media only screen and ( max-width : 775px ) and (min-width : 378px ){
 	.header, .footer {
     	padding: 5px;
 	}
